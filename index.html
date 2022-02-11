@@ -8,35 +8,59 @@
     <title>Jennifer Adams Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/layout.css">
-</head>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+    <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+        <a href="https://www.linkedin.com/in/jenniferannadams/">LINKEDIN</a>
+    </nav>
 <body>
     <header>
-        <h1 id maintitle>Jennifer Adams</h1>
-        <h2>Software Developer</h2>
+        <img src="images/logo.png">
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+
     <main>
         <section class="about">
-            <img src="images/me.jpg">
-            <p> Hi, I'm Jennifer, nice to meet you.<br>
-                I am transitioning my career from college professor and photographer to Software Development. I am currently enrolled at WeCanCodeIt, a full-time coding bootcamp, to become a Full-Stack Software Developer. I am really interested in front-end development and user experience design especially. 
-                I became interested in software development after managing my businses website as well as some for clients. I want to combine my design skills with my computer skills to create great websites.</p>
+            <img src="images/me.png">
+            <p> Hi, I'm Jennifer. <br>
+                I am a full-stack developer. I am currently enrolled at WeCanCodeIt, a full-time coding bootcamp. In my previous career, I was a full-time photographer and college professor. 
+                I became interested in software development after managing my own website as well as web pages for clients. I am most interested in front-end development and user 
+                experience design, which I feel is a good transition from my previous positions. I want to combine my design skills with my computer skills to create great products. <br>
+                <br>
+                I spend my free time hanging out with my family, puttering in the garden, and slowly converting my lawn to native plants.</p>
         </section>
         <div id="centerSections">
-            <section class="projects">
-                <h1>Projects</h1>
+            <h1 id="skillsTitle">SKILLS</h1>
+            <section class="skills">
+                <container>
+                <article>
+                    <h3>SOFTWARE DEVELOPMENT</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sequi laboriosam eius repellat
                     molestiae veritatis cupiditate fuga minus suscipit dolor asperiores ut explicabo doloribus,
                     alias dignissimos. Nemo hic tempore perferendis.</p>
-            </section>
-            <div id="projectSections">
+                </article>
                 <article>
-                    <h3>Virtual Pet</h3>
+                    <h3>USER EXPERIENCE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minima voluptates quos et 
+                    mollitia placeat impedit perspiciatis, qui eaque autem nobis iusto quia! Delectus accusamus 
+                    hic repudiandae beatae facilis? Dolores.</p>
+                </article>
+                <article>
+                    <h3>DESIGN</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magni eligendi voluptate aliquam 
+                    ipsam. Nostrum, fuga nemo. Officia totam ullam, ea quisquam iusto cumque possimus quae modi sint 
+                    reiciendis praesentium?</p>
+                </article>
+            </container>
+            </section>
+            <h1 id="skillsTitle">PROJECTS</h1>
+            <div id="projectSections">
+            
+                <article>
+                    <h3>VIRTUAL PET</h3>
                     <img src="images/virtualpet.jpg">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur delectus voluptatum
                         eligendi et? Esse culpa, minima praesentium eveniet commodi fuga nam voluptas incidunt odio.
@@ -50,33 +74,27 @@
                         repudiandae, repellat error hic.</p>
                 </article>
                 <article>
-                    <h3>FizzBuzzQix</h3>
+                    <h3>FIZZBUZZQIX</h3>
                     <img src="images/fizzbuzz.jpg">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, est possimus alias rem
                         quas necessitatibus officia quia praesentium itaque temporibus quod ducimus ullam distinctio
                         laudantium molestias suscipit aperiam accusamus neque!</p>
                 </article>
+        
             </div>
-
-
-            <section id="contact">
-                <h2>Get in Touch</h2>
-                <ul>
-                    <li>Email</li>
-                    <li>Website</li>
-                </ul>
-
-            </section>
+            <h1 id="skillsTitle">CONTACT</h1>
+                <container id="contactSection">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magni eligendi voluptate aliquam 
+                    ipsam. Nostrum, fuga nemo. Officia totam ullam, ea quisquam iusto cumque possimus quae modi sint 
+                    reiciendis praesentium?</p>
+                </container>
+    
         </div>
     </main>
 
 
     <footer>
-        <ul>
-            <li href="https://github.com/jenniferaadams">Git-hub</li>
-            <li href="https://www.limelightphotographers.com/">Website</li>
-            <li href="https://www.instagram.com/jennlimelightstudios/">Social</li>
-        </ul>
+
         <small>
             &copy; 2022 Jennifer Adams</small>
     </footer>
