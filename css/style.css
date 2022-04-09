@@ -8,24 +8,11 @@
 body {
     background-image: url(../images/1.jpg); 
 }
-header img {
-    width: 100%;
-    padding: 1em;
-}
-header {
-    margin: 0 auto;
-    max-width: 800px;
-}
+
 header {
     padding: 1em 0;
-}
-header h1 {
-    font-size: 3em;
-    text-align: center;
-
-}
-header h2  {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav {
@@ -48,14 +35,11 @@ nav a:hover {
     margin: 0 auto;
     max-width: 1000px; 
 }
-
 section{
     margin: 1em 0;
     padding-top: 1em;
     min-height: 20em;
-
 }
-
 section ul {
     padding-left: 1.5em;
 }
@@ -89,17 +73,11 @@ article h1, h2, h3 {
     text-align: center;
 }
 .about {
-    margin-top: 1em;
+    margin: 0;
     background-color: #fff;
-    /* background-image: url(../images/marble2.jpg); */
-    padding: 1em;
-    max-height: 40em;
-    height: 600px;
+    /* height: 15%; */
     font-size: large;
- 
-}
-.about span {
-    background-color:lightgrey;  
+    display: flex;
 }
 .about p {
     width: 40%;
@@ -107,8 +85,8 @@ article h1, h2, h3 {
     max-width: 400px; 
     margin: 3em;
 }
-.about img {
-    height: 85%;
+.self {
+    height: 20em;
     width: auto;
     margin: 3em;
 }
@@ -133,4 +111,32 @@ h3 {
     background-color: #fff;
     padding: 1em;
     text-align: center;
+}
+.seedFeed{
+    background-color: #fff ;
+    display: flex;
+}
+.smallSF{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seedImg{
+    height: 12em;
+    margin: 15px;
+}
+.adagio{
+    background-color: #fff ;
+    display: flex;
+}
+.smallAM{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.adagioImg{
+    height: 12em;
+    margin: 15px;
 }

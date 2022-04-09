@@ -1,8 +1,6 @@
-#projectSections{
+.projectSections{
     display: flex;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-column-gap: 1em;
+
 }
 .about{
     display: flex;
@@ -20,5 +18,8 @@
 }
 .container {
     display: flex;
-    
+}
+.logoImg{
+    height: 15em;
+    width: auto;
 }

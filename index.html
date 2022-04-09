@@ -11,76 +11,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
-    <nav>
-        <a href="#about">ABOUT</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#contact">CONTACT</a>
-        <a href="https://www.linkedin.com/in/jenniferannadams/">LINKEDIN</a>
-    </nav>
+
 <body>
     <header>
-        <img src="images/logo.png">
+        <img class="logoImg" src="images/logo.png">
     </header>
-
+    <nav>
+        <a href="https://github.com/jenniferaadams" target="_blank">GITHUB</a>
+        <a href="https://www.limelightphotographers.com/" target="_blank">WEBSITE</a>
+        <a href="https://www.linkedin.com/in/jenniferannadams/" target="_blank">LINKEDIN</a>
+    </nav>
     <main>
-        <section class="about">
-            <img src="images/me.png">
-            <p> Hi, I'm Jennifer. <br>
+        <div class="about">
+            <img class="self" src="images/me.png">
+            <p class ="aboutInfo"> Hi, I'm Jennifer. <br>
                 I am a full-stack developer. I am currently enrolled at WeCanCodeIt, a full-time coding bootcamp. In my previous career, I was a full-time photographer and college professor. 
-                I became interested in software development after managing my own website as well as web pages for clients. I am most interested in front-end development and user 
-                experience design, which I feel is a good transition from my previous positions. I want to combine my design skills with my computer skills to create great products. <br>
+                I became interested in software development after managing my own website as well as web pages for clients. I am passionate about coding and enjoy back and front end development. I want to combine my design skills with my computer skills to create great products. <br>
                 <br>
                 I spend my free time hanging out with my family, puttering in the garden, and slowly converting my lawn to native plants.</p>
-        </section>
+            </div>
         <div id="centerSections">
             <h1 id="skillsTitle">SKILLS</h1>
             <section class="skills">
                 <container>
-                <article>
+                <div class ="softwareDev">
                     <h3>SOFTWARE DEVELOPMENT</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sequi laboriosam eius repellat
-                    molestiae veritatis cupiditate fuga minus suscipit dolor asperiores ut explicabo doloribus,
-                    alias dignissimos. Nemo hic tempore perferendis.</p>
-                </article>
-                <article>
-                    <h3>USER EXPERIENCE</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minima voluptates quos et 
-                    mollitia placeat impedit perspiciatis, qui eaque autem nobis iusto quia! Delectus accusamus 
-                    hic repudiandae beatae facilis? Dolores.</p>
-                </article>
-                <article>
+                <p>At WeCanCodeIt I learned front and back end software development. I work with Java, Javascript, MVC, Spring, RESTful APIs, Thymeleaf, JSON, Git/Github, HTML and CSS. 
+                    I am also interested in User Experience Design and work with Adobe XD to mock-up applications.</p>
+                </div>
+                <br>
+                <div class ="designDiv">
                     <h3>DESIGN</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magni eligendi voluptate aliquam 
-                    ipsam. Nostrum, fuga nemo. Officia totam ullam, ea quisquam iusto cumque possimus quae modi sint 
-                    reiciendis praesentium?</p>
-                </article>
+                <p>I have an art degree and I am a professional photographer by trade. I work with the Adobe Creative Suite and use Photoshop, Lightroom, InDesign, Acrobat, Bridge, Express, and XD on a regular basis. I also teach photography and Photoshop at CSCC.</p>
+                </div>
             </container>
             </section>
             <h1 id="skillsTitle">PROJECTS</h1>
             <div id="projectSections">
-            
-                <article>
-                    <h3>VIRTUAL PET</h3>
-                    <img src="images/virtualpet.jpg">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur delectus voluptatum
-                        eligendi et? Esse culpa, minima praesentium eveniet commodi fuga nam voluptas incidunt odio.
-                        Assumenda aut mollitia sapiente perspiciatis illum!</p>
-                </article>
-                <article>
-                    <h3>MVA</h3>
-                    <img src="images/mvcexample.jpg">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quisquam placeat quia velit,
-                        vitae omnis pariatur rem iure minus praesentium at ipsum tempore officia ad, amet
-                        repudiandae, repellat error hic.</p>
-                </article>
-                <article>
-                    <h3>FIZZBUZZQIX</h3>
-                    <img src="images/fizzbuzz.jpg">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, est possimus alias rem
-                        quas necessitatibus officia quia praesentium itaque temporibus quod ducimus ullam distinctio
-                        laudantium molestias suscipit aperiam accusamus neque!</p>
-                </article>
-        
+                <div class="seedFeed">
+                    <img class="seedImg" src="images/virtualpet.jpg">
+                    <div class="smallSF"
+                    <h2>SEED & FEED</h2>
+                    <p>Single page application that allows users to choose what crops they want to plant and when to plant based on their location. Users can also find recipes for each crop and set calendar reminders for when to plant. A RESTful site that uses external APIs to provide additional functionality.</p>
+                        </div>
+                    </div>
+                    <br>
+                <div class="adagio">
+                    <img class="adagioImg" src="images/adagio.png">
+                    <div class="smallAM">
+                    <h3>ADAGIO MUSIC</h3>
+                    <p>Single page application. Uses a combination of Java, Spring, Javascript, API, HTML and CSS to create a RESTful interactive and responsive site to sort albums and songs.</p>
+                </div>
+                </div>
+                <div class="farmClicker">
+                    <div class="smallFM">
+                    <h3>FARM CLICKER</h3>
+                    <img src="images/farm clicker.png">
+                </div>
+                    <p>Inspired by the original Cookie Clicker, Farm Clicker is a web application that allows uses to click to harvest vegetables. Uses Javascript, HTML and CSS to create an interactive and dynamic game environment.</p>
+                </div>
             </div>
             <h1 id="skillsTitle">CONTACT</h1>
                 <container id="contactSection">
