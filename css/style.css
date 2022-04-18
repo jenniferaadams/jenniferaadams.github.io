@@ -98,10 +98,22 @@ article h1, h2, h3 {
     color:#fff;
     font-weight: lighter;
 }
+.contactTitle{
+    background-color:#666;
+    border-radius: 10px;
+    margin: 1em;
+    font-size: 3em;
+    color:#fff;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+}
 .skills {
     background-color: #fff;
     padding: 1em;
     text-align: center;
+    border: none;
+    border-radius: 25px;
 }
 h3 {
     font-weight: lighter;
@@ -110,11 +122,17 @@ h3 {
 .contactSection{
     background-color: #fff;
     padding: 1em;
-    text-align: center;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+
 }
 .seedFeed{
     background-color: #fff ;
     display: flex;
+    padding: 1em;
+    border: none;
+    border-radius: 25px;
 }
 .smallSF{
     display: flex;
@@ -123,12 +141,17 @@ h3 {
     align-items: center;
 }
 .seedImg{
-    height: 12em;
+    width: 17em;
     margin: 15px;
+    border: none;
+    border-radius: 25px;
 }
 .adagio{
     background-color: #fff ;
     display: flex;
+    padding: 1em;
+    border: none;
+    border-radius: 25px;
 }
 .smallAM{
     display: flex;
@@ -137,6 +160,34 @@ h3 {
     align-items: center;
 }
 .adagioImg{
-    height: 12em;
+    width: 17em;
     margin: 15px;
+    border: none;
+    border-radius: 25px;
+}
+.farmClicker{
+    background-color: #fff ;
+    display: flex;
+    padding: 1em;
+    border: none;
+    border-radius: 25px;
+}
+.farmImg{
+    width: 17em;
+    margin: 15px;
+    border: none;
+    border-radius: 25px;
+}
+.smallFM{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.contactSection{
+    background-color: #fff ;
+    display: flex;
+    padding: 1em;
+    border: none;
+    border-radius: 25px;
 }
