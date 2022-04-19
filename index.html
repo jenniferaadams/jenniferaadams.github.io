@@ -17,7 +17,7 @@
         <img class="logoImg" src="images/logo.png">
     </header>
     <nav>
-        <a href="https://github.com/jenniferaadams" target="_blank">GITHUB</a>
+        <a class="gitNav" href="https://github.com/jenniferaadams" target="_blank">GITHUB</a>
         <a href="https://www.limelightphotographers.com/" target="_blank">WEBSITE</a>
         <a href="https://www.linkedin.com/in/jenniferannadams/" target="_blank">LINKEDIN</a>
     </nav>
@@ -32,11 +32,10 @@
             </div>
         <div id="centerSections">
             <h1 id="skillsTitle">SKILLS</h1>
-            <section class="skills">
-                <container>
+            <div class="skills">
                 <div class ="softwareDev">
                     <h3>SOFTWARE DEVELOPMENT</h3>
-                <p>At WeCanCodeIt I learned front and back end software development. I work with Java, Javascript, MVC, Spring, RESTful APIs, Thymeleaf, JSON, Git/Github, HTML and CSS. 
+                <p>At WeCanCodeIt, an intensive 14 week coding bootcamp, I learned front and back end software development. I work with Java, Javascript, MVC, Spring, RESTful APIs, Thymeleaf, JSON, Git/Github, HTML and CSS. 
                     I am also interested in User Experience Design and work with Adobe XD to mock-up applications.</p>
                 </div>
                 <br>
@@ -44,50 +43,59 @@
                     <h3>DESIGN</h3>
                 <p>I have an art degree and I am a professional photographer by trade. I work with the Adobe Creative Suite and use Photoshop, Lightroom, InDesign, Acrobat, Bridge, Express, and XD on a regular basis. I also teach photography and Photoshop at CSCC.</p>
                 </div>
-            </container>
-            </section>
+            </div>
             <h1 id="skillsTitle">PROJECTS</h1>
             <div id="projectSections">
                 <div class="seedFeed">
                     <img class="seedImg" src="images/seed.png">
                     <div class="smallSF">
-                    <h3>SEED & FEED</h3>
+                    <h1 class="titles">SEED & FEED</h1>
                     <p>Single page application that allows users to choose what crops they want to plant and when to plant based on their location. Users can also find recipes for each crop and set calendar reminders for when to plant. A RESTful site that uses external APIs to provide additional functionality.</p>
                         </div>
                     </div>
                     <br>
+                  
                 <div class="adagio">
-                    <img class="adagioImg" src="images/adagio.png">
+                    <a href="https://adagio-music.herokuapp.com/" target="_blank">
+                    <img class="adagioImg" src="images/adagio.png"></a>
                     <div class="smallAM">
-                    <h3>ADAGIO MUSIC</h3>
+                    <h1 class="titles">ADAGIO MUSIC</h1>
                     <p>Adagio Music is single page application that allows users to view albums, songs and music videos. Users can update album and song titles, delete albums and songs or add their own. Uses a combination of Java, Springboot, Javascript, HTML and CSS to create a RESTful interactive and responsive site.</p>
                 </div>
                 </div>
                 <br>
                 <div class="farmClicker">
-                    <img class="farmImg" src="images/farm clicker.png">
+                    <a href="https://jenniferaadams.github.io/donut-maker-jenniferaadams/" target="_blank">
+                    <img class="farmImg" src="images/farm clicker.png"></a>
                     <div class="smallFM">
-                    <h3>FARM CLICKER</h3>
+                    <h1 class="titles">FARM CLICKER</h1>
                     <p>Inspired by the original Cookie Clicker, Farm Clicker is a web application that allows uses to click to harvest vegetables. Uses Javascript, HTML and CSS to create an interactive and dynamic game environment.</p>
+                </div>
+                </div>
+                <br>
+                <div class="beepDiv">
+                    <a href="http://food-truck-review-site-project.herokuapp.com/" target="_blank">
+                    <img class="truckImg" src="images/truck.png"></a>
+                    <div class="smallTruck">
+                    <h1 class="titles">BEEP, BEEP...YUM!</h1>
+                    <p>Beep, Beep...Yum is an application for review food trucks in Columbus, Ohio. It allows users to view, review and add hashtags to food trucks. It is a MVC application created using Java, Springboot and Thymeleaf.</p>
                 </div>
                 </div>
             </div>
             <br>
-            <h1 class="contactTitle">CONTACT</h1>
-                <div class="contactSection">
-                    <img class="webImg" src="/images/web.png">
-                    <img href="https://github.com/jenniferaadams" src="/images/git.png" target="_blank" class="gitImg">
-                    <img class="linkImg"src="/images/linked.png">
-                </div>
-    
+
         </div>
     </main>
 
 
     <footer>
-
-        <small>
-            &copy; 2022 Jennifer Adams</small>
+        <div class="footDiv">
+            <a href="https://github.com/jenniferaadams" target="_blank">
+            <img class="gitImg" src="/images/git.png"></a>
+            <p class="copy"> &copy Jennifer Adams 2022</p>
+            <a href="https://www.linkedin.com/in/jenniferannadams/" target="_blank">
+            <img class="linkImg" src="/images/linked.png"></a>
+        </div>
     </footer>
 </body>
 
