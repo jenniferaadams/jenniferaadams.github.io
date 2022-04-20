@@ -155,6 +155,12 @@ article h1, h2, h3 {
     border: none;
     border-radius: 25px;
 }
+.crabImg{
+    width: 17em;
+    margin: 15px;
+    border: none;
+    border-radius: 25px;
+}
 .adagio{
     background-color: #fff ;
     display: flex;
@@ -203,6 +209,20 @@ article h1, h2, h3 {
     border-radius: 25px;  
 }
 .smallTruck{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 2em;
+}
+.petDiv{
+    background-color: #fff ;
+    display: flex;
+    padding: 1em;
+    border: none;
+    border-radius: 25px;  
+}
+.smallPet{
     display: flex;
     flex-direction: column;
     justify-content: center;
