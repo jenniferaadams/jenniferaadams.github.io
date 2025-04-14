@@ -39,6 +39,21 @@ nav a{
 nav a:active {
     transform: translate(2px, 2px);
 }
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    font-size: xx-large;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  nav a:hover {
+    transform: scale(1.05);
+    border-radius: 5px;
+  }
+  
 #centerSections {
     max-width: 1000px;
     margin-left: auto;
@@ -73,16 +88,14 @@ footer {
     border: 1px solid #333;
 }
 article h1, h2, h3 {
-    text-align: center;
+    font: 500;
 }
 .about {
     margin-top: 1em;
     background-color: #fff;
-    /* height: 15%; */
     font-size: large;
     display: flex;
-    border-bottom: solid 3px #666;
-    border-top: solid 3px #666;
+    border: 2px solid #666;
 }
 .about p {
     width: 40%;
@@ -123,6 +136,7 @@ article h1, h2, h3 {
     border-radius: 10px;
     padding: 2em;
     margin: 0 auto;
+
 }
 
 .contactSection{
@@ -144,8 +158,9 @@ article h1, h2, h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding-bottom: 2em;
+    gap: 1em;
+    padding-left: 2em;
 }
 .seedImg{
     width: 17em;
@@ -176,8 +191,9 @@ article h1, h2, h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding-bottom: 2em;
+    gap: 1em;
+    padding-left: 2em;
 }
 .adagioImg{
     width: 17em;
@@ -202,8 +218,9 @@ article h1, h2, h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
     padding-bottom: 2em;
+    gap: 1em;
+    padding-left: 2em;
 }
 .beepDiv{
     background-color: #fff ;
@@ -216,8 +233,9 @@ article h1, h2, h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
     padding-bottom: 2em;
+    gap: 1em;
+    padding-left: 2em;
 }
 .petDiv{
     background-color: #fff ;
@@ -230,8 +248,9 @@ article h1, h2, h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
     padding-bottom: 2em;
+    gap: 1em;
+    padding-left: 2em;
 }
 .contactSection{
     background-color: #fff ;
@@ -258,10 +277,18 @@ article h1, h2, h3 {
 .skills {
     display: flex;
 }
-
-.logoImg{
+.logoImg {
     height: 15em;
     width: auto;
+    max-width: 100%;
+  }
+
+@media (max-width: 768px) {
+    .logoImg {
+      height: auto;
+      width: 75vw;
+      max-width: 100%;
+    }
 }
 .webImg{
     height: 3em;
@@ -292,8 +319,8 @@ article h1, h2, h3 {
     margin-right: 10em;
 }
 .titles{
-    font-weight: lighter;
     padding-right: 3em;
+    font-weight: 400;
 }
 @media screen and (max-width: 768px) {
     .about {
@@ -317,6 +344,66 @@ article h1, h2, h3 {
     margin-left: auto;
     margin-right: auto;
   }
+  .project-card:hover {
+    transform: scale(1.02);
+    filter: brightness(1.05);
+  }
   
+  @media (max-width: 768px) {
+    .seedFeed,
+    .adagio,
+    .farmClicker,
+    .beepDiv,
+    .petDiv {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .seedImg,
+    .truckImg,
+    .crabImg,
+    .adagioImg,
+    .farmImg {
+      width: 80%;
+    }
+  }
+.section-spacing {
+    margin-bottom: 3em;
+  }
 
+  .project-card {
+    margin-bottom: 2em;
+    transition: transform 0.2s ease-in-out;
+    min-height: 16rem;
+    border-radius: 10px;
+    border: 2px solid #666;
+  }
+  
+  .project-card img {
+    margin-bottom: 1em;
+  }
+  @media screen and (max-width: 768px) {
+    .project-card a,
+    .project-card div {
+      flex-direction: column !important;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .project-card img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 1em;
+    }
+  
+    .project-card .titles {
+      margin-top: 0.5em;
+    }
+  }
+  
+  
+ 
+  
 
