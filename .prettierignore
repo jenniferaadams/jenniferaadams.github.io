@@ -1,0 +1,4 @@
+node_modules
+css/tailwind.css
+dist
+build
