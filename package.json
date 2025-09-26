@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --minify",
-    "dev:css": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch",
     "format": "prettier -w ."
   },
   "author": "",
