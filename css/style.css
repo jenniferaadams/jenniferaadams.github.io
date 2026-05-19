@@ -35,6 +35,20 @@ footer {
   border-top: 2px solid #666;
 }
 
+a {
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: #9a5a14;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #ffe0b5 !important;
+}
+
 #projectSections article {
   background: #ccc;
   padding: 1em;
@@ -119,6 +133,19 @@ footer {
 }
 .gitImg {
   height: 2.9em;
+}
+.footDiv a {
+  display: inline-flex;
+  align-items: center;
+  transition:
+    filter 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+}
+
+.footDiv a:hover,
+.footDiv a:focus {
+  filter: brightness(1.2);
+  transform: translateY(-2px) scale(1.08);
 }
 
 .footDiv {

@@ -47,11 +47,18 @@
         <div class="!px-10 lg:w-1/3 lg:!px-0">
           <p class="!py-3">Hi, I'm Jennifer.</p>
           <p class="!py-3">
-            I'm a software developer with a strong foundation in art, design,
-            and teaching, which I try to bring into every line of code. I care
-            deeply about user experience, accessibility, and creating
-            thoughtful, intuitive interfaces that make life easier for the
-            people using them.
+            I'm a software developer with a background in art, design, and
+            teaching. I build responsive, accessible, SEO-focused web
+            experiences with a strong emphasis on thoughtful interfaces,
+            reusable component systems, and content workflows that are easy for
+            teams to maintain.
+          </p>
+          <p class="!py-3">
+            My work often sits at the intersection of engineering, design,
+            content, and marketing. I design layouts and user flows in Figma,
+            build them in Vue and Nuxt, and use tools like Sanity, analytics,
+            and technical SEO to create web experiences that are polished,
+            practical, and aligned with real business goals.
           </p>
           <p class="!py-3">
             When I'm not coding, you'll find me hanging out with my family,
@@ -72,32 +79,44 @@
           >
             <div class="flex flex-col !gap-8 !px-12 !py-6">
               <p>
-                I'm a software developer at MoreSteam, where I work across the
-                stack to build and maintain Vue and Nuxt applications, integrate
-                with back-end services in ColdFusion, C#, and SQL, and manage
-                content through Sanity. I focus on creating responsive,
-                accessible, and engaging user experiences while also shaping
-                content strategy with SEO, analytics, and performance
-                optimization.
+                I'm a software developer at MoreSteam, where I build and
+                maintain responsive, accessible, SEO-focused web experiences
+                across marketing sites, product interfaces, client portals,
+                course pages, and reporting tools. My work spans Vue, Nuxt,
+                TypeScript, Tailwind CSS, Sanity, ColdFusion, C#, and SQL, with
+                a focus on creating reusable component systems, CMS-powered
+                content workflows, and polished user experiences that support
+                both business goals and user needs.
               </p>
               <p>
-                I entered the tech field through a full-time coding bootcamp, We
-                Can Code IT, where I learned Java, JavaScript, RESTful APIs,
-                Spring, HTML/CSS, and Thymeleaf. Since then, I've expanded into
-                modern front-end frameworks, back-end integrations, and data
-                handling, gaining experience with tools like Matomo, Google
-                Analytics, and structured data for SEO.
+                A significant part of my work sits at the intersection of
+                engineering, design, content, and marketing. I design product
+                and eLearning components, page layouts, and user flows in Figma,
+                then build and refine them in code. I also support technical
+                SEO, analytics implementation, structured data, Core Web Vitals,
+                accessibility, and performance optimization, helping teams
+                create web experiences that are not only functional, but
+                findable, maintainable, and easy to improve over time.
               </p>
               <p>
-                My career began in photography and education. In college I
-                earned a BFA from the Columbus College of Art & Design. I then
-                taught Digital Photography and Photoshop at Columbus State for
-                13 years while also running my own photography business for 11
-                years. Through that work I developed expertise in visual
-                storytelling, layout, and design, as well as the ability to
-                explain complex concepts clearly to diverse audiences. These
-                strengths continue to shape how I approach front-end development
-                and user experience today.
+                I entered the tech field through We Can Code IT, a full-time
+                software development bootcamp where I studied Java, JavaScript,
+                RESTful APIs, Spring, HTML/CSS, and Thymeleaf. Since then, I’ve
+                expanded into modern front-end frameworks, CMS integrations,
+                back-end services, analytics platforms, and AI-assisted
+                development workflows, using tools such as Sanity, Matomo, GA4,
+                Google Tag Manager, and AI coding assistants to build more
+                efficient and scalable solutions.
+              </p>
+              <p>
+                My career began in photography, design, and education. I earned
+                a BFA from the Columbus College of Art & Design, taught Digital
+                Photography and Photoshop at Columbus State for 13 years, and
+                ran my own photography business for 11 years. That background
+                gave me a strong foundation in visual storytelling, layout,
+                hierarchy, usability, and clear communication. Those strengths
+                continue to shape how I approach front-end development, UX, and
+                digital product design today.
               </p>
             </div>
           </div>
@@ -125,205 +144,227 @@
         <a href="https://github.com/jenniferaadams" target="_blank">
           <img class="gitImg" src="/images/git.png" />
         </a>
-        <p class="copy">&copy Jennifer Adams 2025</p>
+        <p class="copy">&copy Jennifer Adams <span id="currentYear"></span></p>
         <a href="https://www.linkedin.com/in/jenniferannadams/" target="_blank">
           <img class="linkImg" src="/images/linked.png" />
         </a>
       </div>
     </footer>
-  </body>
-</html>
-<script>
-  const workProjects = [
-    {
-      title: 'Reports Home - Project Tracking Software',
-      bullets: {
-        Challenge:
-          'Users struggled to find and manage reports. The legacy Reports Home was outdated, difficult to navigate, and lacked basic functionality such as sorting, filtering, and search.',
-        Actions:
-          'Built a new Vue and Nuxt front end integrated with ColdFusion and SQL. Added filtering, pinning, search, pagination, and permission handling with an intuitive design.',
-        Impact:
-          'Delivered a modern, user-friendly hub with intuitive search, filtering, and sorting that made reports far easier to locate and manage.',
-      },
-    },
-    {
-      title: 'Dynamic Landing Pages',
-      bullets: {
-        Challenge:
-          'Needed to rank for high-intent and long-tail keywords without hand-building and maintaining a ton of one-off pages.',
+    <script>
+      const currentYear = new Date().getFullYear()
+      document.getElementById('currentYear').textContent = currentYear
 
-        Actions:
-          'Built a dynamic landing-page system with Nuxt/Vue backed by Sanity. Created a flexible component library (hero, FAQs, comparison tables, CTAs, testimonials, etc) and a dynamic [...slug].vue route so pages publish from CMS. Created forms that linked to different to internal support ticket as well as Salesforce. Created a gated download option to create interest and capture leads.',
+      const workProjects = [
+        {
+          title: 'Dynamic Landing Page System',
+          bullets: {
+            Challenge:
+              'Marketing needed a faster way to publish targeted, SEO-focused landing pages for campaigns, long-tail keywords, gated downloads, and audience-specific offers without creating one-off development requests for every page.',
+            Actions:
+              'Built a Vue/Nuxt + Sanity landing-page system with a dynamic [...slug].vue route and reusable CMS-driven components, including hero sections, FAQs, comparison tables, CTAs, testimonials, forms, and gated download options. Integrated forms with internal support workflows and Salesforce.',
+            Impact:
+              'Enabled marketing to launch targeted pages quickly within a consistent design system, reducing developer dependency while supporting SEO, A/B testing, campaign launches, and lead capture.',
+          },
+        },
+        {
+          title: 'Marketing Site Overhauls',
+          bullets: {
+            Challenge:
+              'Key marketing and product pages were outdated, difficult to update, and not consistently optimized for SEO, accessibility, performance, or brand storytelling.',
+            Actions:
+              'Redesigned layouts, rebuilt page structures in Vue/Nuxt, standardized Sanity content workflows, improved metadata and structured data, and refined page content for clarity, conversion, and search visibility.',
+            Impact:
+              'Delivered faster, more maintainable pages with stronger branding, improved update workflows, and better support for SEO and marketing goals across multiple product areas.',
+          },
+        },
+        {
+          title: 'Product and eLearning UI Components',
+          bullets: {
+            Challenge:
+              'New product and eLearning experiences needed reusable interface patterns that were easier to maintain, more visually consistent, and more intuitive for learners and internal teams.',
+            Actions:
+              'Designed components, page layouts, and user flows in Figma, then built reusable Vue/Nuxt components with Tailwind CSS. Refined interactions through UX review, user testing, and close collaboration with product and content stakeholders.',
+            Impact:
+              'Improved usability, consistency, and development efficiency while creating reusable patterns that could scale across product interfaces, dashboards, and eLearning experiences.',
+          },
+        },
+        {
+          title: 'Custom Client Portals',
+          bullets: {
+            Challenge:
+              'Legacy ColdFusion portals and an outdated cart required custom code for each new client portal, making launches slow, repetitive, and difficult to maintain.',
+            Actions:
+              'Rebuilt the portal experience with Vue/Nuxt, modern cart and authentication flows, database integrations, and Sanity-powered configuration for branding, pricing, and product selection.',
+            Impact:
+              'Created scalable portals used by enterprise clients and reduced portal creation time from days to minutes.',
+          },
+        },
+        {
+          title: 'Reports Home - Project Tracking Software',
+          bullets: {
+            Challenge:
+              'Users struggled to find and manage reports in a legacy Reports Home experience that was outdated, difficult to navigate, and missing core functionality such as search, filtering, sorting, and pinning.',
+            Actions:
+              'Built a new Vue/Nuxt front end integrated with ColdFusion and SQL. Added search, filtering, sorting, pinning, pagination, permission handling, and a more intuitive information architecture.',
+            Impact:
+              'Delivered a modern reporting hub that made reports easier to locate, organize, and manage while improving the overall user experience.',
+          },
+        },
+        {
+          title: 'AI-Assisted Response Component',
+          bullets: {
+            Challenge:
+              'An eLearning workflow needed a clearer way to connect users with AI-generated output while keeping the experience reviewable, understandable, and practical.',
+            Actions:
+              'Built an AI-assisted response component that connected an eLearning tool with AI-generated output. Focused on front-end interaction design, review/editing flow, and making the generated response useful within the user’s existing workflow.',
+            Impact:
+              'Created a more practical AI-supported experience by helping users review, refine, and apply generated output rather than treating AI as a black-box result.',
+          },
+        },
+        {
+          title: 'Analytics Migration to Matomo',
+          bullets: {
+            Challenge:
+              'The organization needed a privacy-conscious analytics setup that supported cookie consent requirements without losing visibility into marketing performance and user behavior.',
+            Actions:
+              'Integrated Matomo across sites, configured cookie preferences, migrated dashboards, validated event tracking, and maintained reporting continuity alongside GA4 and Google Tag Manager workflows.',
+            Impact:
+              'Maintained reliable analytics coverage during the transition while improving privacy compliance and supporting SEO, conversion, and behavior analysis.',
+          },
+        },
+        {
+          title: 'SEO Research and Implementation',
+          bullets: {
+            Challenge:
+              'Core course and product pages needed stronger search visibility, clearer content structure, and more consistent technical SEO foundations.',
+            Actions:
+              'Ran keyword research, rewrote metadata, added structured data, improved internal linking, optimized layouts, refreshed outdated content, and helped build pillar content around strategic topics.',
+            Impact:
+              'Strengthened organic search foundations for key product and course pages while improving content quality, discoverability, and site structure.',
+          },
+        },
+        {
+          title: 'ISSISSIPPI Microsite',
+          url: 'https://ississippi.org/',
+          bullets: {
+            Challenge:
+              'A legacy April Fools microsite was broken, outdated, difficult to update, and built in an older ColdFusion implementation.',
+            Actions:
+              'Rebuilt the microsite end to end in a modern front-end stack, recreating interactive gadgets, playful content, and branded UI patterns with a rapid turnaround.',
+            Impact:
+              'Delivered a refreshed interactive experience that preserved the humor of the original site while improving maintainability, usability, and brand personality.',
+          },
+        },
+      ]
 
-        Impact:
-          'Enabled fast publishing of targeted pages without dev tickets, marketing team can spin up as many pages as they like within this design system for a/b testing, targeted campaigns and keywords.',
-      },
-    },
-    {
-      title: 'Customer Portals - eCommerce System',
-      bullets: {
-        Challenge:
-          'Legacy ColdFusion portals and an outdated cart required custom code for each new portal and were hard to maintain.',
-        Actions:
-          'Rebuilt from scratch with Vue and Nuxt, shopping cart authentication, and modern database integrations. Integrated Sanity so new portals can be created in a few clicks with custom branding, pricing, and products.',
-        Impact:
-          'Launched scalable portals used by Fortune 500 clients and cut portal creation time from days to minutes.',
-      },
-    },
-    {
-      title: 'Analytics Migration to Matomo',
-      bullets: {
-        Challenge:
-          'Needed a privacy compliant alternative to Google Analytics that worked with cookie consent and did not reduce visibility.',
-        Actions:
-          'Integrated Matomo across sites, added cookie preferences, migrated dashboards, and validated events.',
-        Impact:
-          'Maintained full analytics coverage during the transition and improved GDPR compliance for reliable reporting.',
-      },
-    },
-    {
-      title: 'ISSISSIPPI Microsite',
-      url: 'https://ississippi.org/',
-      bullets: {
-        Challenge:
-          'An old ColdFusion April Fools site was broken, difficult to update and outdated.',
-        Actions:
-          'Rebuilt the microsite end to end with a modern stack and recreated all interactive gadgets and content.',
-        Impact:
-          'Delivered a playful, refreshed site in a rapid turnaround that delighted users and reinforced brand personality.',
-      },
-    },
-    {
-      title: 'SEO Research and Implementation',
-      bullets: {
-        Challenge:
-          'Sites underperformed for core terms and lacked consistent metadata, structured data, and internal links.',
-        Actions:
-          'Ran keyword research, rewrote metadata and structured data, improved internal linking, optimized layouts, and built pillar content.',
-        Impact:
-          'Improved rankings and organic traffic to course and product pages and strengthened domain authority.',
-      },
-    },
-    {
-      title: 'Marketing Site Overhauls',
-      bullets: {
-        Challenge: 'Marketing sites were outdated and not optimized for SEO.',
-        Actions:
-          'Redesigned layouts, implemented SEO research, improved structured content in Sanity, and rebuilt pages in Vue and Nuxt.',
-        Impact:
-          'Faster pages with better visibility and modern branding across two product sites.',
-      },
-    },
-  ]
+      const projects = [
+        {
+          title: 'SEED & FEED',
+          img: 'images/seed.png',
+          desc: 'A responsive single-page application that helps users decide what crops to plant and when, based on their location. Users can explore recipes for each crop and set calendar reminders for planting. Built using external APIs and RESTful principles to enhance functionality.',
+          link: 'https://seed-and-feed-frontend.herokuapp.com/',
+          class: 'seedFeed',
+          imgClass: 'seedImg',
+          divClass: 'smallSF',
+        },
+        {
+          title: 'ADAGIO MUSIC',
+          img: 'images/adagio.png',
+          desc: 'A music browsing app where users can view albums, songs, and music videos. Includes full CRUD functionality for albums and songs. Built using Java, Spring Boot, JavaScript, HTML, and CSS, with a responsive layout and RESTful architecture.',
+          class: 'adagio',
+          imgClass: 'adagioImg',
+          divClass: 'smallAM',
+        },
+        {
+          title: 'FARM CLICKER',
+          img: 'images/farm clicker.png',
+          desc: 'A playful web-based clicker game inspired by Cookie Clicker. Users click to harvest vegetables and earn upgrades. Built with vanilla JavaScript, HTML, and CSS to create a dynamic and engaging user experience.',
+          link: 'https://jenniferaadams.github.io/donut-maker-jenniferaadams/',
+          class: 'farmClicker',
+          imgClass: 'farmImg',
+          divClass: 'smallFM',
+        },
+        {
+          title: 'BEEP, BEEP...YUM!',
+          img: 'images/truck.png',
+          desc: 'A review and discovery platform for food trucks in Columbus, Ohio. Users can browse trucks, write reviews, and add hashtags. Built as an MVC application using Java, Spring Boot, and Thymeleaf.',
+          link: 'http://food-truck-review-site-project.herokuapp.com/',
+          class: 'beepDiv',
+          imgClass: 'truckImg',
+          divClass: 'smallTruck',
+        },
+        {
+          title: 'VIRTUAL CRAB SHELTER',
+          img: 'images/crab.png',
+          desc: 'A Java console-based simulation where users care for organic and robotic crabs in a virtual pet shelter. Demonstrates object-oriented programming through inheritance, abstract classes, and interfaces.',
+          link: 'https://github.com/jenniferaadams/virtual-pet-jenniferadamsphoto',
+          class: 'petDiv',
+          imgClass: 'crabImg',
+          divClass: 'smallPet',
+        },
+      ]
 
-  const projects = [
-    {
-      title: 'SEED & FEED',
-      img: 'images/seed.png',
-      desc: 'A responsive single-page application that helps users decide what crops to plant and when, based on their location. Users can explore recipes for each crop and set calendar reminders for planting. Built using external APIs and RESTful principles to enhance functionality.',
-      link: 'https://seed-and-feed-frontend.herokuapp.com/',
-      class: 'seedFeed',
-      imgClass: 'seedImg',
-      divClass: 'smallSF',
-    },
-    {
-      title: 'ADAGIO MUSIC',
-      img: 'images/adagio.png',
-      desc: 'A music browsing app where users can view albums, songs, and music videos. Includes full CRUD functionality for albums and songs. Built using Java, Spring Boot, JavaScript, HTML, and CSS, with a responsive layout and RESTful architecture.',
-      class: 'adagio',
-      imgClass: 'adagioImg',
-      divClass: 'smallAM',
-    },
-    {
-      title: 'FARM CLICKER',
-      img: 'images/farm clicker.png',
-      desc: 'A playful web-based clicker game inspired by Cookie Clicker. Users click to harvest vegetables and earn upgrades. Built with vanilla JavaScript, HTML, and CSS to create a dynamic and engaging user experience.',
-      link: 'https://jenniferaadams.github.io/donut-maker-jenniferaadams/',
-      class: 'farmClicker',
-      imgClass: 'farmImg',
-      divClass: 'smallFM',
-    },
-    {
-      title: 'BEEP, BEEP...YUM!',
-      img: 'images/truck.png',
-      desc: 'A review and discovery platform for food trucks in Columbus, Ohio. Users can browse trucks, write reviews, and add hashtags. Built as an MVC application using Java, Spring Boot, and Thymeleaf.',
-      link: 'http://food-truck-review-site-project.herokuapp.com/',
-      class: 'beepDiv',
-      imgClass: 'truckImg',
-      divClass: 'smallTruck',
-    },
-    {
-      title: 'VIRTUAL CRAB SHELTER',
-      img: 'images/crab.png',
-      desc: 'A Java console-based simulation where users care for organic and robotic crabs in a virtual pet shelter. Demonstrates object-oriented programming through inheritance, abstract classes, and interfaces.',
-      link: 'https://github.com/jenniferaadams/virtual-pet-jenniferadamsphoto',
-      class: 'petDiv',
-      imgClass: 'crabImg',
-      divClass: 'smallPet',
-    },
-  ]
+      const workGrid = document.getElementById('workGrid')
 
-  const workGrid = document.getElementById('workGrid')
+      workProjects.forEach((p) => {
+        const card = document.createElement('article')
+        card.className = [
+          'rounded-md bg-white shadow border-2 border-[#666]',
+          'transition-transform duration-300 hover:shadow-lg hover:ring-black/10',
+          'focus-within:ring-2 ',
+          '!p-6 !md:p-8',
+        ].join(' ')
 
-  workProjects.forEach((p) => {
-    const card = document.createElement('article')
-    card.className = [
-      'rounded-md bg-white shadow border-2 border-[#666]',
-      'transition-transform duration-300 hover:shadow-lg hover:ring-black/10',
-      'focus-within:ring-2 ',
-      '!p-6 !md:p-8',
-    ].join(' ')
+        const h3 = document.createElement('h3')
+        h3.className = 'text-xl font-semibold text-gray-900'
+        h3.textContent = p.title
 
-    const h3 = document.createElement('h3')
-    h3.className = 'text-xl font-semibold text-gray-900'
-    h3.textContent = p.title
+        const list = document.createElement('ul')
+        list.className = 'mt-4 space-y-3 text-gray-800'
+        ;['Challenge', 'Actions', 'Impact'].forEach((key) => {
+          if (!p.bullets?.[key]) return
+          const li = document.createElement('li')
+          li.className = 'leading-relaxed'
+          li.innerHTML = `<span class="font-semibold">${key}:</span> ${p.bullets[key]}`
+          list.appendChild(li)
+        })
 
-    const list = document.createElement('ul')
-    list.className = 'mt-4 space-y-3 text-gray-800'
-    ;['Challenge', 'Actions', 'Impact'].forEach((key) => {
-      if (!p.bullets?.[key]) return
-      const li = document.createElement('li')
-      li.className = 'leading-relaxed'
-      li.innerHTML = `<span class="font-semibold">${key}:</span> ${p.bullets[key]}`
-      list.appendChild(li)
-    })
+        card.appendChild(h3)
+        card.appendChild(list)
 
-    card.appendChild(h3)
-    card.appendChild(list)
+        if (p.url) {
+          const link = document.createElement('a')
+          link.href = p.url
+          link.target = '_blank'
+          link.rel = 'noopener noreferrer'
+          link.className =
+            'mt-5 inline-flex items-center gap-2 text-indigo-700 hover:underline font-semibold !pl-6'
+          link.innerHTML = 'Visit project'
+          card.appendChild(link)
+        }
 
-    if (p.url) {
-      const link = document.createElement('a')
-      link.href = p.url
-      link.target = '_blank'
-      link.rel = 'noopener noreferrer'
-      link.className =
-        'mt-5 inline-flex items-center gap-2 text-indigo-700 hover:underline font-semibold !pl-6'
-      link.innerHTML = 'Visit project'
-      card.appendChild(link)
-    }
+        workGrid.appendChild(card)
+      })
 
-    workGrid.appendChild(card)
-  })
+      const grid = document.getElementById('projectGrid')
 
-  const grid = document.getElementById('projectGrid')
+      projects.forEach((p) => {
+        const card = document.createElement(p.link ? 'a' : 'div')
+        if (p.link) {
+          card.href = p.link
+          card.target = '_blank'
+          card.rel = 'noopener noreferrer'
+        }
 
-  projects.forEach((p) => {
-    const card = document.createElement(p.link ? 'a' : 'div')
-    if (p.link) {
-      card.href = p.link
-      card.target = '_blank'
-      card.rel = 'noopener noreferrer'
-    }
+        card.className = [
+          'flex flex-col rounded-md bg-white p-4 shadow border-2 border-[#666]',
+          'ring-1 ring-black/5',
+          'transition-transform duration-300',
+          'hover:scale-[1.02] hover:shadow-lg hover:ring-black/10',
+          'focus:outline-none focus:ring-2 focus:ring-indigo-500',
+        ].join(' ')
 
-    card.className = [
-      'flex flex-col rounded-md bg-white p-4 shadow border-2 border-[#666]',
-      'ring-1 ring-black/5',
-      'transition-transform duration-300',
-      'hover:scale-[1.02] hover:shadow-lg hover:ring-black/10',
-      'focus:outline-none focus:ring-2 focus:ring-indigo-500',
-    ].join(' ')
-
-    card.innerHTML = `
+        card.innerHTML = `
       <div class="aspect-[4/3] w-full overflow-hidden rounded-t-md bg-gray-100">
         <img
           src="${p.img}"
@@ -336,6 +377,8 @@
       <h3 class="mt-4 text-lg font-semibold text-gray-900 !p-4">${p.title}</h3>
       <p class="mt-2 text-sm leading-relaxed text-gray-700 !p-4">${p.desc}</p>
     `
-    grid.appendChild(card)
-  })
-</script>
+        grid.appendChild(card)
+      })
+    </script>
+  </body>
+</html>
